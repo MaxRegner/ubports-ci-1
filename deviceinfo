@@ -1,0 +1,31 @@
+deviceinfo_name="Sony"
+deviceinfo_manufacturer="Xperia X Compact"
+deviceinfo_codename="kugo"
+deviceinfo_arch="aarch64"
+deviceinfo_kernel_source="https://github.com/kollienne/device-kernel-loire"
+deviceinfo_kernel_source_branch="ubports/LA.UM.5.7.r1"
+deviceinfo_kernel_defconfig="aosp_loire_kugo_defconfig"
+deviceinfo_kernel_cmdline="androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M console=tty0"
+deviceinfo_kernel_clang_compile="false"
+deviceinfo_flash_pagesize="2048"
+deviceinfo_flash_offset_base="0x80000000"
+#deviceinfo_flash_offset_kernel="0x00008000"
+deviceinfo_flash_offset_ramdisk="0x01000000"
+#deviceinfo_flash_offset_second="0xf00000"
+deviceinfo_flash_offset_tags="0x00000100"
+#deviceinfo_flash_offset_dtb="0x1f00000"
+#deviceinfo_bootimg_qcdt="false"
+#deviceinfo_bootimg_header_version="2"
+deviceinfo_bootimg_os_version="10"
+deviceinfo_bootimg_os_patch_level="2020-01"
+#deviceinfo_bootimg_prebuilt_#dtb="xiaomi-miatoll.dtb"
+#deviceinfo_bootimg_partition_size="134217728"
+#deviceinfo_prebuilt_dtbo="dtbo.img"
+#deviceinfo_has_recovery_partition="true"
+#deviceinfo_recovery_partition_size="134217728"
+#deviceinfo_rootfs_image_sector_size="4096"
+CONFIG_PSTORE=y
+CONFIG_PSTORE_CONSOLE=y
+CONFIG_PSTORE_RAM=y
+CONFIG_PSTORE_RAM_ANNOTATION_APPEND=y
+
