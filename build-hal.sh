@@ -95,6 +95,7 @@ elif [ -n "$deviceinfo_dtbo" ]; then
 fi
 
 chmod 755 /home/runner/work/ubports-ci-1/ubports-ci-1/build/build-kernel.sh
+ chmod 755 /home/runner/work/ubports-ci-1/ubports-ci-1/build/make-bootimage.sh
 
 "$SCRIPT/make-bootimage.sh" "${TMPDOWN}" "${TMPDOWN}/KERNEL_OBJ" "${TMPDOWN}/halium-boot-ramdisk.img" "${TMP}/partitions/boot.img"
 
