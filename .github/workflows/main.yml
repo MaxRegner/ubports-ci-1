@@ -85,4 +85,3 @@ jobs:
         name: halium-boot image
         path: /home/runner/work/halium/out/target/product/clover/halium-boot.img
 
-    -#
