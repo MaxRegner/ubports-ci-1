@@ -93,6 +93,8 @@ elif [ -n "$deviceinfo_dtbo" ]; then
     "$SCRIPT/make-dtboimage.sh" "${TMPDOWN}" "${TMPDOWN}/KERNEL_OBJ" "${TMP}/partitions/dtbo.img"
 fi
 
+chmod 755 /home/runner/work/ubports-ci-1/ubports-ci-1/build/build-kernel.sh
+
 "$SCRIPT/make-bootimage.sh" "${TMPDOWN}" "${TMPDOWN}/KERNEL_OBJ" "${TMPDOWN}/halium-boot-ramdisk.img" "${TMP}/partitions/boot.img"
 
 cp -av overlay/* "${TMP}/"
