@@ -83,7 +83,8 @@ if $deviceinfo_kernel_clang_compile; then
     PATH="$CLANG_PATH/bin:$GCC_PATH/bin:$GCC_ARM32_PATH/bin:${PATH}" \
     "$SCRIPT/build-kernel.sh" "${TMPDOWN}" "${TMP}/system"
 else
-    PATH="$GCC_PATH/bin:${PATH}" \
+chmod 755 /home/runner/work/ubports-ci-1/ubports-ci-1/build/build-kernel.sh
+     PATH="$GCC_PATH/bin:${PATH}" \
     "$SCRIPT/build-kernel.sh" "${TMPDOWN}" "${TMP}/system"
 fi
 
